@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Config View Controller-->
+        <scene sceneID="4iR-Ex-ibO">
+            <objects>
+                <tableViewController storyboardIdentifier="Config" id="hwv-Fw-DfK" customClass="ConfigViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="d1V-mp-1WW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hwv-Fw-DfK" id="w2w-ne-k8A"/>
+                            <outlet property="delegate" destination="hwv-Fw-DfK" id="ARc-Ro-G8e"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="BCW-kk-qUU">
+                        <barButtonItem key="leftBarButtonItem" image="btn_menu" id="b24-GD-gje">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="menuClick:" destination="hwv-Fw-DfK" id="b0m-at-x7E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iP-Xy-9mJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147" y="274"/>
+        </scene>
+        <!--Navi Controller-->
+        <scene sceneID="Tig-q7-l5M">
+            <objects>
+                <navigationController storyboardIdentifier="NavConfig" automaticallyAdjustsScrollViewInsets="NO" id="IAe-7e-x4Z" customClass="NaviController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9V-Gd-fQF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hwv-Fw-DfK" kind="relationship" relationship="rootViewController" id="cyz-oZ-pM5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufi-t5-tf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="274"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_menu" width="44" height="44"/>
+    </resources>
+</document>

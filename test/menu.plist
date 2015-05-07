@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon_hl</key>
+		<string>bg_allmooc_hl</string>
+		<key>icon</key>
+		<string>bg_allmooc</string>
+		<key>title</key>
+		<string>全部课程</string>
+	</dict>
+	<dict>
+		<key>icon_hl</key>
+		<string>bg_mymooc_hl</string>
+		<key>icon</key>
+		<string>bg_mymooc</string>
+		<key>title</key>
+		<string>我的课程</string>
+	</dict>
+	<dict>
+		<key>icon_hl</key>
+		<string>bg_off-line_hl</string>
+		<key>icon</key>
+		<string>bg_off-line</string>
+		<key>title</key>
+		<string>离线缓存</string>
+	</dict>
+	<dict>
+		<key>icon_hl</key>
+		<string>bg_message_hl</string>
+		<key>icon</key>
+		<string>bg_message</string>
+		<key>title</key>
+		<string>我的消息</string>
+	</dict>
+	<dict>
+		<key>icon_hl</key>
+		<string>bg_mynote_hl</string>
+		<key>icon</key>
+		<string>bg_mynote</string>
+		<key>title</key>
+		<string>我的笔记</string>
+	</dict>
+</array>
+</plist>
